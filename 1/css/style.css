@@ -1,0 +1,31 @@
+*, ::after, ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.container-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 464px);
+    grid-template-rows: repeat(2, 400px), 600px;
+    gap: 54px;
+    margin-bottom: 100px;
+}
+
+#img1-1 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.container-2 {
+    display: grid;
+    grid-template: repeat(2, 425px) / repeat(4, 425px);
+    background: rgb(25, 25, 25);
+}
